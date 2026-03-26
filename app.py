@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify,Flask
 app = Flask(__name__)
 
 # Load the trained model and label encoder
-model = joblib.load('models/logistic_regression_menstrual_phase_model.joblib')
+model = joblib.load('logistic_regression_menstrual_phase_model.joblib')
 label_encoder = joblib.load('label_encoder_menstrual_phase.joblib')
 
 @app.route('/predict', methods=['POST'])
