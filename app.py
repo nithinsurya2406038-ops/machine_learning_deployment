@@ -1,6 +1,6 @@
 import joblib
 import pandas as pd
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify,Flask
 
 app = Flask(__name__)
 
